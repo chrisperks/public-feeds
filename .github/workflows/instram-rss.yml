@@ -12,7 +12,7 @@ jobs:
         uses: katydecorah/instagram-rss-action@v0.2.0
         with:
           yourInstagram: katydecorah
-          listOfInstagrams: skateboardgb,bloomsheffield,feelslikehome.co.uk
+          listOfInstagrams: skateboardgb,bloomsheffield,feelslikehome.co.uk,katydecorah
       - name: Commit files
         if: ${{ success() && steps.rss.outputs.RSS_STATUS == 'success' }}
         run: |
